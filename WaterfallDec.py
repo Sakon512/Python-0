@@ -40,7 +40,6 @@ for i in npCombinatorsArr:
     curNpCpmImpArr = np.array(npCpmImpArr)
     for j in npCpmImpArr:
         if j[0] == i[k][0]:
-            # print(j[0], "=", i[k][0], jCount)
             if rowCount < len(curNpCpmImpArr):
                 curNpCpmImpArr = delete_net(curNpCpmImpArr, rowCount)
                 rowCount -=1
@@ -53,7 +52,6 @@ for i in npCombinatorsArr:
                 newWaterfall = curNpCpmImpArr
             break
         rowCount += 1
-        # if rowCount < 9: rowCount += 1
 print(answer)
 newWaterfall = np.array(newWaterfall)
 print(newWaterfall)
