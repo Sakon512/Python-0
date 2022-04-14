@@ -21,7 +21,7 @@ npCombinatorsArr = np.array(combinatorArr)
 def delete_net(arr, k):
     if k < len(arr)-1:
         arr[k+1][1] = arr[k+1][1] + arr[k][1]
-    return np.array(np.delete(arr, k, 0))
+    return np.delete(arr, k, 0)
 
 
 def waterfall_revenue(cpmImpArr):
